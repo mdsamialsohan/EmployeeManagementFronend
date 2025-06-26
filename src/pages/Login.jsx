@@ -28,7 +28,7 @@ const Login = () => {
     }
   }, [user, navigate]);
   return (
-    <div className="w-screen h-screen bg-gradient-to-b from-teal-600 to-gray-100 flex items-center justify-center px-4">
+    <div className="w-screen h-screen bg-gradient-to-b from-teal-600 from-50% to-gray-100 to-50% flex items-center justify-center px-4">
       <div className="w-full max-w-sm bg-white p-8 rounded-lg shadow-lg">
         <h2 className="text-3xl font-bold text-center text-teal-600 mb-6 font-pacific">
           Employee Management System
@@ -75,12 +75,14 @@ const Login = () => {
               Forgot password?
             </a>
           </div>
-          <button
-            type="submit"
-            className="w-full bg-teal-600 hover:bg-teal-700 text-white py-2 rounded-md transition duration-300"
-          >
-            Login
-          </button>
+          <div className="mb-4">
+            <button
+              type="submit"
+              className="w-full bg-teal-600 text-white py-2"
+            >
+              Login
+            </button>
+          </div>
         </form>
       </div>
     </div>
