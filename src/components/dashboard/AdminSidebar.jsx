@@ -1,5 +1,4 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import { AiOutlineFileText } from "react-icons/ai";
 import {
   FaBuilding,
   FaCalendarAlt,
@@ -9,7 +8,7 @@ import {
   FaTachometerAlt,
   FaUsers,
 } from "react-icons/fa";
-import {AiOutlineFileText} from 'react-icons/ai'
+import { NavLink } from "react-router-dom";
 
 const AdminSidebar = () => {
   return (
@@ -42,7 +41,7 @@ const AdminSidebar = () => {
           <span>Employee</span>
         </NavLink>
         <NavLink
-          to="/admin-dashboard/departments"
+          to="/admin-dashboard/branches"
           className={({ isActive }) =>
             `${
               isActive ? "bg-teal-500 " : " "
@@ -50,7 +49,7 @@ const AdminSidebar = () => {
           }
         >
           <FaBuilding />
-          <span>Department</span>
+          <span>Branches</span>
         </NavLink>
         <NavLink
           to="/admin-dashboard/leaves"
